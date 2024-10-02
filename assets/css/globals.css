@@ -2,6 +2,7 @@
   /* Primary Colors */
   --primary-color: #f5c116;
   --secondary-color: #e74c3c;
+  --purple-color: #213;
 
   /* Neutral Colors */
   --background-color: #000;
@@ -17,8 +18,10 @@
 
 h1 {
   color: var(--primary-color);
-  margin: 5px auto;
-  margin-bottom: -5px;
+}
+
+b {
+  color: var(--primary-color);
 }
 
 .text-center {
@@ -133,4 +136,5 @@ a {
 
 footer {
   background: var(--background-light-color);
+  z-index: 1;
 }

@@ -17,3 +17,4 @@ function showMainContent() {
 // Event listener for the start button
 document.getElementById('start-button').addEventListener('click', showMainContent);
 
+
