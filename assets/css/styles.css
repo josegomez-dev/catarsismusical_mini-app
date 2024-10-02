@@ -552,7 +552,7 @@ footer {
   z-index: 1;
   width: 100%;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 10px 0 10px 10px;
 }
 
 .dropdown-content a {

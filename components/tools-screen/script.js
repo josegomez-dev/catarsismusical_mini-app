@@ -1,4 +1,4 @@
-document.querySelectorAll('.dropdown-content a').forEach(item => {
+document.querySelectorAll('#dropdown-content-tools a').forEach(item => {
   item.addEventListener('click', event => {
     event.preventDefault();
 
@@ -9,7 +9,7 @@ document.querySelectorAll('.dropdown-content a').forEach(item => {
     const contentDiv = document.getElementById(contentId);
 
     // Clear the content area
-    const contentArea = document.getElementById('content-area');
+    const contentArea = document.getElementById('content-area-tools');
     contentArea.innerHTML = '';
 
     // Clone the selected content and append it to the content area
@@ -19,13 +19,13 @@ document.querySelectorAll('.dropdown-content a').forEach(item => {
     contentArea.querySelector('.hidden-content').style.display = 'block';
 
     // Hide the dropdown after selection
-    document.getElementById('dropdown-content').style.display = 'none';
+    document.getElementById('dropdown-content-tools').style.display = 'none';
   });
 });
 
 // Re-show dropdown when clicking the dropdown button
-document.querySelector('.dropbtn').addEventListener('click', () => {
-  const dropdownContent = document.getElementById('dropdown-content');
+document.querySelector('#dropdown-btn-tools').addEventListener('click', () => {
+  const dropdownContent = document.getElementById('dropdown-content-tools');
   dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
 
