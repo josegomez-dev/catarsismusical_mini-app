@@ -15,12 +15,13 @@
 }
 
 .page-guitar-fretboard {
-  width: 95%;
+  width: 90%;
   max-width: 90em;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
   padding-bottom: 2rem;
+  border-radius: 10px;
   background-color: black;
 }
 .page > h1 {

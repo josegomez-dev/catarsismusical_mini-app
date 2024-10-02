@@ -4,12 +4,12 @@
   </div>
 
 
-  <h3 style="margin-bottom: -50px;" class="">Escala Pentatonica</h3>
-  <div class="page-guitar-fretboard"></div>
+  <div class="page-guitar-fretboard">
+    <h4>Escala Pentatonica</h4>
     <p class="hint secondary-text">Guitar Standard Tuning in E</p>
     <div class="wrap" id="guitar-fretboard">
       <div class="controls">
-        <label for="scales-1">Select scale</label><select id="scales-1" v-model="checkedKey">
+        <label for="scales-1">Select scale &nbsp;</label><select id="scales-1" v-model="checkedKey">
           <option value="c-minor">C-Minor</option>
           <option value="d-minor">D-Minor</option>
           <option value="e-minor">E-Minor</option>
@@ -26,11 +26,11 @@
           <option value="b-major">B-Major</option>
         </select>
         <ul class="list horizontal">
-          <li><label>Box 1<input type="checkbox" v-model="checkedScales" checked value="one"></label></li>
-          <li><label>Box 2<input type="checkbox" v-model="checkedScales" value="two"></label></li>
-          <li><label>Box 3<input type="checkbox" v-model="checkedScales" value="three"></label></li>
-          <li><label>Box 4<input type="checkbox" v-model="checkedScales" value="four"></label></li>
-          <li><label>Box 5<input type="checkbox" v-model="checkedScales" value="five"></label></li>
+          <li><label>#1<input type="checkbox" v-model="checkedScales" checked value="one"></label></li>
+          <li><label>#2<input type="checkbox" v-model="checkedScales" value="two"></label></li>
+          <li><label>#3<input type="checkbox" v-model="checkedScales" value="three"></label></li>
+          <li><label>#4<input type="checkbox" v-model="checkedScales" value="four"></label></li>
+          <li><label>#5<input type="checkbox" v-model="checkedScales" value="five"></label></li>
         </ul>
       </div>
 
@@ -273,3 +273,5 @@
   </div><!-- .page -->
 
 </div>
+
+<br/><br/><br/><br/><br/>
