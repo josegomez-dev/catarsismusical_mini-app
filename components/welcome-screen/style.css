@@ -1,0 +1,45 @@
+.welcome-screen {
+  display: flex;
+  flex-direction: column;  /* Stack elements vertically */
+  justify-content: center;  /* Center items vertically */
+  align-items: center;      /* Center items horizontally */
+  height: 100vh;           /* Full height of the viewport */
+  text-align: center;       /* Center text within the container */
+  padding: 20px;           /* Add some padding */
+  box-sizing: border-box;
+}
+
+.welcome-screen .title {
+  margin-top: -15px;
+  margin-bottom: -5px;
+}
+
+.welcome-screen .logo {
+  max-width: 300px;
+}
+
+.welcome-screen .description {
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: brown;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes rotateY-once {
+  from {
+    transform: perspective(800px) rotateY(0deg);
+  }
+  to {
+    transform: perspective(800px) rotateY(1080deg); /* 360deg x 3 for 3 rotations */
+  }
+}
+
+.rotateY-once {
+  display: inline-block; /* Ensures image dimensions are respected */
+  animation: rotateY-once 5s ease-out;
+  animation-fill-mode: forwards;
+  transform-style: preserve-3d; /* Maintain 3D rendering */
+}

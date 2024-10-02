@@ -1,0 +1,125 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #f5c116;
+  --secondary-color: #e74c3c;
+
+  /* Neutral Colors */
+  --background-color: #000;
+  --background-light-color: #333;
+  --text-color: #fff;
+  --border-color: #bdc3c7;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.primary-text {
+  color: var(--primary-color);
+}
+
+.secondary-text {
+  color: var(--secondary-color);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.color-white {
+  color: var(--text-color);
+}
+.color-black {
+  color: var(--background-color);
+}
+
+.box-red {
+  display: grid;
+  margin: 15px 0;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, red, gold 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+
+.box-blue {
+  display: grid;
+  margin: 15px 0;
+  place-content: center;
+  color: white;
+  text-shadow: 0 1px 0 #000;
+  --border-angle: 0turn;
+  --main-bg: conic-gradient(
+      from var(--border-angle),
+      #213,
+      #112 5%,
+      #112 60%,
+      #213 95%
+    );
+  border: solid 5px transparent;
+  border-radius: 2em;
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, blue, purple 99%, transparent);
+  background: var(--main-bg) padding-box, var(--gradient-border) border-box, var(--main-bg) border-box;
+  background-position: center center;
+  -webkit-animation: bg-spin 5s linear infinite;
+          animation: bg-spin 5s linear infinite;
+}
+
+@-webkit-keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+  }
+}
+.box:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+/* Portrait mode (vertical orientation) */
+@media only screen and (orientation: portrait) {
+  .game-container iframe {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed for portrait mode */
+  }
+}
+
+/* Landscape mode (horizontal orientation) */
+@media only screen and (orientation: landscape) {
+  .game-container iframe {
+    width: 100%;
+    height: 100vh; /* Take up full height in landscape mode */
+  }
+}

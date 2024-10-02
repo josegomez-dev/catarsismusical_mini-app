@@ -1,0 +1,28 @@
+.game-image-wrapper {
+  text-align: center;
+  padding: 15px;
+}
+
+.game-image {
+  width: 100%;
+  max-width: 600px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Horizontal scroll */
+  white-space: nowrap; /* Prevents wrapping of the buttons */
+  padding: 10px;
+  gap: 15px;
+}
+
+.scroll-container button:last-child {
+  margin-right: 0; /* No margin on the last button */
+}
+
+/* Optional: To hide scrollbars in Webkit browsers */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+
