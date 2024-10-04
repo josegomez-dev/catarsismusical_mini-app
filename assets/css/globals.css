@@ -135,6 +135,7 @@ a {
 }
 
 footer {
+  /* max-width: 600px; */
   background: var(--background-light-color);
   z-index: 1;
 }

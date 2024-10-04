@@ -17,16 +17,5 @@ document.querySelectorAll('#dropdown-content-tools a').forEach(item => {
 
     // Ensure the content is visible
     contentArea.querySelector('.hidden-content').style.display = 'block';
-
-    // Hide the dropdown after selection
-    document.getElementById('dropdown-content-tools').style.display = 'none';
   });
 });
-
-// Re-show dropdown when clicking the dropdown button
-document.querySelector('#dropdown-btn-tools').addEventListener('click', () => {
-  const dropdownContent = document.getElementById('dropdown-content-tools');
-  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-});
-
-

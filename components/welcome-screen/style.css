@@ -10,7 +10,6 @@
 }
 
 .welcome-screen .title {
-  margin-top: -15px;
   margin-bottom: -5px;
 }
 
@@ -21,7 +20,7 @@
 .welcome-screen .description {
   font-size: 12px;
   margin-bottom: 15px;
-  color: brown;
+  color: white;
 }
 
 .hidden {

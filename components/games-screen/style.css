@@ -1,28 +1,29 @@
-.game-image-wrapper {
-  text-align: center;
-  padding: 15px;
-}
 
 .game-image {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
+  border-radius: 2em;
+  margin-bottom: -3px;
 }
 
-.scroll-container {
-  display: flex;
-  overflow-x: auto; /* Horizontal scroll */
-  white-space: nowrap; /* Prevents wrapping of the buttons */
-  padding: 10px;
-  gap: 15px;
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Creates 2 columns */
+  gap: 0 15px;
 }
 
-.scroll-container button:last-child {
-  margin-right: 0; /* No margin on the last button */
+
+/* Medium screens like tablets (iPad) */
+@media (min-width: 768px) {
+  .games-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show 3 columns */
+  }
 }
 
-/* Optional: To hide scrollbars in Webkit browsers */
-.scroll-container::-webkit-scrollbar {
-  display: none;
+/* Large screens like desktops */
+@media (min-width: 1024px) {
+  .games-grid {
+    grid-template-columns: repeat(3, 1fr); /* Show 5 columns */
+  }
 }
-
 

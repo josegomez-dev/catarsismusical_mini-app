@@ -91,9 +91,9 @@ function animateAvatar() {
     // Add animation class to the character
     character.classList.add('animate');
 
-    const clickSound = document.getElementById('click-sound');
-    clickSound.currentTime = 0; // Rewind to start (useful for rapid clicks)
-    clickSound.play();
+    // const clickSound = document.getElementById('click-sound');
+    // clickSound.currentTime = 0; // Rewind to start (useful for rapid clicks)
+    // clickSound.play();
 
     openEditUserModal();
 
@@ -102,3 +102,5 @@ function animateAvatar() {
         character.classList.remove('animate');
     }, { once: true }); // The `once` option ensures the listener is removed after one call
 }
+
+

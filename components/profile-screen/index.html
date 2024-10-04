@@ -7,10 +7,12 @@
 <div class="profile-container content-box">
   <!-- Profile Header -->
   <div class="profile-header">
-      <div class="character-container" id="character" onclick="animateAvatar()">
-          <img src="https://josegomez-dev.github.io/vainilla-JS-reactive-components/assets/img/avatar.png" alt="Character" class="character">
+      <div class="clickable-container">
+        <div class="character-container" id="character" onclick="animateAvatar()">
+            <img src="https://josegomez-dev.github.io/vainilla-JS-reactive-components/assets/img/avatar.png" alt="Character" class="character">
+        </div>
+        <div class="hand">👉</div>
       </div>
-      <!-- <button class="edit-btn" onclick="openModal()">Edit Profile</button> -->
   </div>
 
   <!-- User Info -->
@@ -35,6 +37,8 @@
       </div>
   </div>
 </div>
+
+{{leaderboard-table[""]}}
 
 <!-- Bottom Modal for Editing Profile -->
 <div id="profileModal" class="modal">

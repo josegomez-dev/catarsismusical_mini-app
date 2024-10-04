@@ -13,3 +13,28 @@
 .course-grid h3 {
   padding: 15px;
 }
+
+.active-select-option {
+  background-color: white;
+}
+
+/* Medium screens like tablets (iPad) */
+@media (min-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr); /* Show 3 columns */
+  }
+}
+
+/* Large screens like desktops */
+@media (min-width: 1024px) {
+  .course-grid {
+    grid-template-columns: repeat(5, 1fr); /* Show 5 columns */
+  }
+}
+
+/* Adjust for smaller screens if needed (mobile) */
+@media (max-width: 767px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr); /* Maintain 2 columns on small screens */
+  }
+}

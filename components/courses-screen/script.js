@@ -18,15 +18,13 @@ document.querySelectorAll('#dropdown-content-courses a').forEach(item => {
     // Ensure the content is visible
     contentArea.querySelector('.hidden-content').style.display = 'block';
 
-    // Hide the dropdown after selection
-    document.getElementById('dropdown-content-courses').style.display = 'none';
+    // Remove the active class from all links
+    document.querySelectorAll('#dropdown-content-courses a').forEach(link => {
+      link.classList.remove('active-select-option');
+    });
+
+    // Add the active class to the clicked item
+    item.classList.add('active-select-option');
   });
 });
-
-// Re-show dropdown when clicking the dropdown button
-document.querySelector('#dropdown-btn-courses').addEventListener('click', () => {
-  const dropdownContent = document.getElementById('dropdown-content-courses');
-  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-});
-
 
