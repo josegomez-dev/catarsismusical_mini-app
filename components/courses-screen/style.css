@@ -14,10 +14,6 @@
   padding: 15px;
 }
 
-.active-select-option {
-  background-color: white;
-}
-
 /* Medium screens like tablets (iPad) */
 @media (min-width: 768px) {
   .course-grid {

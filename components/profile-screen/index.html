@@ -2,43 +2,59 @@
   <div class="content-box">
     <h1>Perfil</h1>
   </div>
+
+  <div class="profile-container content-box">
+      <!-- Profile Header -->
+      <div class="profile-header">
+          <div class="clickable-container">
+            <div class="character-container" id="character" onclick="animateAvatar()">
+                <img src="https://josegomez-dev.github.io/vainilla-JS-reactive-components/assets/img/avatar.png" alt="Character" class="character">
+            </div>
+            <div class="hand">👉</div>
+          </div>
+      </div>
+
+      <!-- User Info -->
+      <div class="user-info">
+          <h2 id="username">Alejandro Gomez</h2>
+          <p id="bio">Software Engineer | Musician | Creative Technologist</p>
+      </div>
+
+      <!-- Stat Counters -->
+      <div class="stats">
+          <div class="stat">
+              <h3>Cursos Completados</h3>
+              <p id="followers">10</p>
+          </div>
+          <div class="stat">
+              <h3>Actividad</h3>
+              <p id="posts">50%</p>
+          </div>
+          <div class="stat">
+              <h3>Puntos</h3>
+              <p id="likes">3#</p>
+          </div>
+      </div>
+  </div>
+
+  {{leaderboard-table[""]}}
+
 </div>
 
-<div class="profile-container content-box">
-  <!-- Profile Header -->
-  <div class="profile-header">
-      <div class="clickable-container">
-        <div class="character-container" id="character" onclick="animateAvatar()">
-            <img src="https://josegomez-dev.github.io/vainilla-JS-reactive-components/assets/img/avatar.png" alt="Character" class="character">
-        </div>
-        <div class="hand">👉</div>
-      </div>
-  </div>
+<div class="content-box">
+  <p>
+    Ofrecemos <b>juegos, herramientas y recursos</b> que impulsan el desarrollo de tu creatividad y habilidades musicales.
+  </p>
+  <p>
+    <b>Estudio de produccion y composicion musical</b>, consulta por nuestras tarifas.
+  </p>
+  <p>
+    Galeria de musica producidas en el estudio <b>Catarsis Musical</b>.
+  </p>
 
-  <!-- User Info -->
-  <div class="user-info">
-      <h2 id="username">Alejandro Gomez</h2>
-      <p id="bio">Software Engineer | Musician | Creative Technologist</p>
-  </div>
-
-  <!-- Stat Counters -->
-  <div class="stats">
-      <div class="stat">
-          <h3>Courses</h3>
-          <p id="followers">10</p>
-      </div>
-      <div class="stat">
-          <h3>Activity</h3>
-          <p id="posts">50%</p>
-      </div>
-      <div class="stat">
-          <h3>Leaderboard</h3>
-          <p id="likes">3#</p>
-      </div>
-  </div>
+  <img class="content-bottom-logo" src="./../../assets/img/logo.png" alt="" />
 </div>
 
-{{leaderboard-table[""]}}
 
 <!-- Bottom Modal for Editing Profile -->
 <div id="profileModal" class="modal">
@@ -50,5 +66,3 @@
       <button class="save-btn" onclick="saveProfile()">Save</button>
   </div>
 </div>
-
-<img class="content-bottom-logo" src="./../../assets/img/logo.png" alt="" />

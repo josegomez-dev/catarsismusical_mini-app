@@ -86,8 +86,6 @@ p, a, span, h3, h4, label, li {
   display: none;
   height: 100vh; /* Full viewport height */
   width: 100vw;  /* Full viewport width */
-  /* max-width: 600px;
-  margin: 0 auto; */
 }
 
 /* App Container */
@@ -570,6 +568,7 @@ footer {
 
 .badge.basic {
   background-color: royalblue; /* Example badge color */
+  color: white;
 }
 .badge.intermediate {
   background-color: var(--primary-color); /* Example badge color */
@@ -582,13 +581,22 @@ footer {
 
 .content-bottom-logo {
   margin-top: -100px;
+  max-width: 400px;
 }
 .content-academy-logo {
   margin: 0px 0 80px 0;
+  max-width: 400px;
 }
 .content-games-logo {
-  margin: -80px 0;
+  margin: -80px 0 -30px 0;
+  max-width: 400px;
 }
 .content-tools-logo {
   margin: -110px 0 20px 0;
+  max-width: 400px;
+}
+
+.active-select-option {
+  background-color: #222;
+  color: var(--primary-color) !important;
 }

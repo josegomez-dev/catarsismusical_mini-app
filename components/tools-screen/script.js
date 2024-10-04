@@ -17,5 +17,13 @@ document.querySelectorAll('#dropdown-content-tools a').forEach(item => {
 
     // Ensure the content is visible
     contentArea.querySelector('.hidden-content').style.display = 'block';
+
+    // Remove the active class from all links
+    document.querySelectorAll('#dropdown-content-tools a').forEach(link => {
+      link.classList.remove('active-select-option');
+    });
+
+    // Add the active class to the clicked item
+    item.classList.add('active-select-option');
   });
 });
