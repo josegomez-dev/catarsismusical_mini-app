@@ -1,4 +1,4 @@
-let data = [
+let _data = [
   { rank: 0, name: "dog", lastName: 'Salchicha', score: 0, color: "var(--purple-color)" },
   { rank: 0, name: "horse", lastName: 'Caballo', score: 0, color: "var(--purple-color)" },
   { rank: 0, name: "dove", lastName: 'Paloma', score: 0, color: "var(--purple-color)" },
@@ -9,7 +9,7 @@ let data = [
 
 let container = document.querySelector(".table-container");
 
-data
+_data
   .sort((a, b) => {
     if (b.score === a.score) {
       return a.name.localeCompare(b.name); // Sort by name if scores are equal
@@ -18,7 +18,7 @@ data
   })
   .forEach((e, i) => (e.rank = i));
 
-data.forEach((el, i) => {
+_data.forEach((el, i) => {
   let box = document.createElement("div");
   box.className = "team";
   box.style.setProperty("--i", i);

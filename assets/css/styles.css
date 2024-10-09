@@ -530,13 +530,6 @@ footer {
   display: block;
   color: var(--border-color);
 }
-/* .dropdown-content a:last-child {
-  border-bottom: 1px solid var(--border-color);
-} */
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -552,9 +545,10 @@ footer {
 .hidden-content {
   display: none; /* Hide the content divs by default */
 }
- .border-bottom {
+
+.border-bottom {
   border-bottom: 1px solid var(--border-color);
- }
+}
 
  .badge {
   padding: 2px 6px;
