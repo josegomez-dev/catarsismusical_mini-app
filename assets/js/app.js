@@ -17,7 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const targetTab = document.getElementById(targetTabId);
         targetTab.style.display = 'block'; // Show the target tab
         targetTab.classList.add('active');
-        document.querySelector(`#footer-nav button[data-tab="${targetTabId}"]`).classList.add('active');
+        const tab = document.querySelector(`#footer-nav button[data-tab="${targetTabId}"]`);
+        if (tab) {
+            tab.classList.add('active');
+        }
     };
 
     // Add click event listener to all nav buttons

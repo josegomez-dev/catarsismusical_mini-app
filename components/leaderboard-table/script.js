@@ -41,9 +41,9 @@ _data.forEach((el, i) => {
 
   box.addEventListener("click", () => {
     let elName = box.querySelector(".name").innerHTML;
-    data.find((team) => team.name === elName);
-    data.find((team) => team.name === elName).score += 1;
-    data
+    _data.find((team) => team.name === elName);
+    _data.find((team) => team.name === elName).score += 1;
+    _data
       .sort((a, b) => {
         if (b.score === a.score) {
           return a.name.localeCompare(b.name); // Sort by name if scores are equal
@@ -59,11 +59,11 @@ _data.forEach((el, i) => {
       if (elementName.innerHTML == elName) {
         elementScore.innerHTML++;
       }
-      let newRank = data.find(
+      let newRank = _data.find(
         (team) => team.name === elementName.innerHTML
       ).rank;
       element.style.setProperty("--i", newRank);
-      console.log(data.find((team) => team.name === elementName.innerHTML));
+      console.log(_data.find((team) => team.name === elementName.innerHTML));
     });
   });
 });
