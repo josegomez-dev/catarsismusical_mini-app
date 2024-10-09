@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide loading screen after content is loaded
         loadingScreen.style.display = 'none';
         triggerAnimation();
-        // showMainContent(); // remove this to get the START PAGE
     }, 1500); // Adjust loading time as needed
 
     // Default tab to show
