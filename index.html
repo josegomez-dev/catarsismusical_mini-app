@@ -31,9 +31,9 @@
             <div class="content-tab" id="tools">
                 {{tools-screen[""]}}
             </div>
-            <div class="content-tab" id="games">
+            <!-- <div class="content-tab" id="games">
                 {{games-screen[""]}}
-            </div>
+            </div> -->
             <div class="content-tab" id="account">
                 {{profile-screen[""]}}
             </div>
@@ -60,12 +60,12 @@
                             <span>Herramientas</span>
                         </button>
                     </li>
-                    <li>
+                    <!-- <li>
                         <button class="tab-button" data-tab="games">
                             <i class="fas fa-gamepad"></i>
                             <span>Juegos</span>
                         </button>
-                    </li>
+                    </li> -->
                     <li>
                         <button class="tab-button" data-tab="account">
                             <i class="fas fa-user"></i>
@@ -89,18 +89,16 @@
         eruda.init();
     </script> -->
     <script>
-const ids = {};
-document.querySelectorAll('[id]').forEach((el) => {
-    if (ids[el.id]) {
-        // Highlight duplicate ID elements
-        el.style.border = "2px solid red";
-        console.warn(`Duplicate id found: ${el.id}`);
-    } else {
-        ids[el.id] = true;
-    }
-});
-
-
+        const ids = {};
+        document.querySelectorAll('[id]').forEach((el) => {
+            if (ids[el.id]) {
+                // Highlight duplicate ID elements
+                el.style.border = "2px solid red";
+                console.warn(`Duplicate id found: ${el.id}`);
+            } else {
+                ids[el.id] = true;
+            }
+        });
     </script>
   </body>
 </html>
