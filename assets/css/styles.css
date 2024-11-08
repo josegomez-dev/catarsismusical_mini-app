@@ -15,6 +15,21 @@ body, html {
   background-size: 400% 400%;
   background-attachment: fixed;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Hide scrollbar in Webkit-based browsers */
+body {
+  overflow: hidden; /* Optional: hide the scrollbar for the entire body */
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* hides the scrollbar */
+  height: 0; /* hides the scrollbar */
+}
+
+body {
+  overflow: auto; /* Keep scrolling enabled */
 }
 
 p, a, span, h3, h4, label, li {
